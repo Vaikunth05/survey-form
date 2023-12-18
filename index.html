@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/Survey Form/styles.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">CSK IPL Home Match Experience</h1>
+    <p id="description">Thank you for taking the time to help us imporve the staduim experience.</p>
+    <form id="survey-form" method="post">
+
+        <fieldset>
+            <label for="name" id="name-label">Name: <input type="text" id="name" placeholder="Enter your name"
+                    required></label>
+            <label for="email" id="email-label">Email: <input type="email" id="email" placeholder="Enter your email"
+                    required></label>
+            <label for="number" id="number-label">Age: <input type="number" id="number" min=13 max=100
+                    placeholder="Enter your age" required></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Have you been to a game before?</legend>
+            <label for="yes"><input type="radio" id="yes" name="attendance" value="yes" class="inline" checked>
+                Yes</label>
+
+
+            <label for="no"><input type="radio" id="no" name="attendance" value="no" class="inline"> No</label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Match Details</legend>
+            <label>Match Date?<input type="date"></label>
+            <label>Match Against?
+                <select id="dropdown" name="dropdown">
+                    <option value="">Select team</option>
+                    <option value="delhi capitals">Delhi Capitals</option>
+                    <option value="gujarat titans">Gujarat Titans</option>
+                    <option value="kolkata knight riders">Kolkata Knight Riders</option>
+                    <option value="lcknow super giants">Lucknow Super Giants</option>
+                    <option value="mumbai indians">Mumbai Indians</option>
+                    <option value="punjab kings">Punjab Kings</option>
+                    <option value="rajasthan royals">Rajasthan Royals</option>
+                    <option value="royal challengers banglore">Royal Challengers Bangalore</option>
+                    <option value="sunrisers hyderabad">Sunrisers Hyderabad</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Areas to improve?</legend>
+            <label><input type="checkbox" id="seating" class="inline" value="seating">Seating</label>
+            <label><input type="checkbox" id="parking" class="inline" value="parking">Parking</label>
+            <label><input type="checkbox" id="food_and_beverages" class="inline" value="food and beverages">Food and
+                beverages</label>
+            <label><input type="checkbox" id="ticket_fair" class="inline" value="ticket fair">Ticket fair</label>
+        </fieldset>
+
+        <fieldset>
+            <label for="suggestions">Any Suggestions?
+                <textarea name="suggestions" id="suggestions" cols="30" rows="10"
+                    placeholder="Enter your suggestions here."></textarea>
+            </label>
+        </fieldset>
+        <input id="submit" type="submit" value="submit">
+    </form>
+</body>
+</html>
